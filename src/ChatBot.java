@@ -1,3 +1,7 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.sql.SQLOutput;
+
 public class ChatBot {
 
     // instance variables
@@ -43,6 +47,16 @@ public class ChatBot {
     // method that RETURNS a goodbye message as a String -- note that this method does not print
     public String goodbye() {
         return "It was nice talking with you! Have a great day! Sincerely, " + name;
+    }
+    //method that prints the product of the two integers
+    public void multiply(int num1, int num2) {
+        System.out.print(num1 * num2);
+    }
+    //method that prints and RETURNS the divisor of the inputted int and the bot's favorite number
+    public double divideByFavorite(int num1){
+        double divisor = num1/number;
+        System.out.println(divisor);
+        return divisor;
     }
 }
 
